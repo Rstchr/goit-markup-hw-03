@@ -101,14 +101,26 @@ button {
   color: #2e2f42;
 }
 
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 .menu-nav {
-  display: inline-flex;
   align-items: flex-start;
   gap: 40px;
   margin-right: 332px;
 }
+.container {
+  display: flex;
+}
 
+.contacts-list {
+  gap: 40px;
+}
 .menu-nav-links {
+  padding: 24px 0;
+
   color: #2e2f42;
   text-decoration: none;
   font-family: Roboto;
