@@ -109,7 +109,6 @@ button {
 .menu-nav {
   align-items: flex-start;
   gap: 40px;
-  margin-right: 332px;
 }
 .container {
   display: flex;
