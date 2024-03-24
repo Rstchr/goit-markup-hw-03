@@ -1,0 +1,177 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+}
+
+header {
+  background-color: #e7e9fc;
+}
+
+footer {
+  background-color: #2e2f42;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h2 {
+  color: #2e2f42;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+h3 {
+  color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* header */
+.logo {
+  color: #4d5ae5;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.logo-web {
+  color: #2e2f42;
+}
+
+.menu-nav-links {
+  color: #2e2f42;
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.menu-nav-links:hover {
+  color: #404bbf;
+}
+.menu-nav-links:first-child:focus {
+  color: #404bbf;
+}
+
+.contacts {
+  font-style: normal;
+}
+
+.links {
+  text-decoration: none;
+  color: #434455;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.links:hover,
+.links:focus {
+  color: #404bbf;
+}
+
+/* Main */
+
+/* title */
+.main-title {
+  background-color: #2e2f42;
+}
+
+.main-title-header {
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  line-height: 1.07;
+}
+.main-title-button {
+  background-color: #4d5ae5;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.main-title-button:hover,
+.main-title-button:focus {
+  background-color: #404bbf;
+}
+
+/* values */
+
+.values-h {
+  text-align: left;
+}
+
+.values-p {
+  text-align: left;
+}
+
+/* team */
+.team {
+  background-color: #f4f4fd;
+  text-transform: capitalize;
+}
+
+.team-title {
+  line-height: 1.11;
+}
+
+.team-list {
+  background-color: #ffffff;
+}
+.team-name {
+  text-align: center;
+}
+
+.team-desc {
+  text-align: center;
+}
+
+/* portfolio */
+.portfolio-title {
+  line-height: 1.11;
+  text-transform: capitalize;
+}
+/* Footer */
+
+footer .logo {
+  color: #4d5ae5;
+}
+
+footer .logo-web {
+  color: #f4f4fd;
+}
+
+.f-text {
+  color: #f4f4fd;
+}
