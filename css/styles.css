@@ -18,6 +18,10 @@ h6 {
   border: none;
 }
 
+img {
+  display: block;
+}
+
 header {
   background-color: #e7e9fc;
 }
@@ -30,16 +34,20 @@ ul {
   list-style-type: none;
 }
 
+.m-header {
+  border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
+  background: var(--WHITE, #fff);
+}
+
 .top-line {
   display: flex;
-  width: 1440px;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
   height: 72px;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-
-  border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
-  background: var(--WHITE, #fff);
 }
 .title-h2 {
   color: #2e2f42;
