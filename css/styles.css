@@ -40,10 +40,6 @@ ul {
 }
 
 .top-line {
-  display: flex;
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
   height: 72px;
   justify-content: center;
   align-items: center;
@@ -104,6 +100,7 @@ button {
 .main-nav {
   display: flex;
   align-items: center;
+  margin-right: auto;
 }
 
 .menu-nav {
@@ -112,6 +109,11 @@ button {
 }
 .container {
   display: flex;
+  max-width: 1128px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contacts-list {
@@ -199,16 +201,29 @@ button {
 }
 
 .visually-hidden {
-  position: fixed;
-  transform: scale(0);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .values-list {
+  display: flex;
   gap: 24px;
 }
 
 .values-list-item {
   width: calc((100% - 72px) / 4);
+}
+
+.values-list-item:last-child {
+  margin-right: 0;
 }
 
 .values-list-item .title-h3 {
