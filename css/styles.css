@@ -351,6 +351,7 @@ footer .logo {
 }
 
 footer .logo-web {
+  display: inline-block;
   color: #f4f4fd;
 }
 
