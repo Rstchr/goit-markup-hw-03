@@ -18,8 +18,29 @@ h6 {
   border: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding-left: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
 img {
   display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 header {
@@ -30,27 +51,29 @@ footer {
   background-color: #2e2f42;
 }
 
-ul {
-  list-style-type: none;
+/* common styles */
+.container {
+  display: flex;
+  max-width: 1128px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.m-header {
-  border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
-  background: var(--WHITE, #fff);
+.values,
+.team,
+.portfolio,
+.foot {
+  padding: 120px 0;
 }
 
-.top-line {
-  height: 72px;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-}
 .title-h2 {
   color: #2e2f42;
   font-size: 36px;
   font-weight: 700;
   line-height: 40px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02emimg;
   text-align: center;
 }
 
@@ -70,11 +93,19 @@ ul {
   text-align: left;
 }
 
-button {
-  cursor: pointer;
+/* header */
+.header-class {
+  border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
+  background: var(--WHITE, #fff);
 }
 
-/* header */
+.header-top-line {
+  height: 72px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
 .logo {
   display: inline-flex;
   height: 24px;
@@ -93,33 +124,25 @@ button {
   text-align: left;
 }
 
-.logo-web {
+.logo-span {
   color: #2e2f42;
 }
 
-.main-nav {
+.nav-class {
   display: flex;
   align-items: center;
   margin-right: auto;
 }
 
-.menu-nav {
+.nav-list {
   align-items: flex-start;
   gap: 40px;
-}
-.container {
-  display: flex;
-  max-width: 1128px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .contacts-list {
   gap: 40px;
 }
-.menu-nav-links {
+.nav-list-link {
   padding: 24px 0;
 
   color: #2e2f42;
@@ -131,10 +154,10 @@ button {
   letter-spacing: 0.02em;
   text-align: left;
 }
-.menu-nav-links:hover {
+.nav-list-link:hover {
   color: #404bbf;
 }
-.menu-nav-links:first-child:focus {
+.nav-list-link:first-child:focus {
   color: #404bbf;
 }
 
@@ -142,7 +165,7 @@ button {
   font-style: normal;
 }
 
-.links {
+.contacts-link {
   text-decoration: none;
   color: #434455;
   font-family: Roboto;
@@ -151,20 +174,23 @@ button {
   letter-spacing: 0.02em;
   text-align: left;
 }
-.links:hover,
-.links:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: #404bbf;
 }
 
-/* Main */
-
-/* title */
+/* Main title */
+.main-title .container {
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
 .main-title {
   background-color: #2e2f42;
   padding: 188px 0;
 }
 
-.main-title-header {
+.main-title-h {
   max-width: 496px;
 
   color: #ffffff;
@@ -194,11 +220,8 @@ button {
 .main-title-button:focus {
   background-color: #404bbf;
 }
-/* values */
 
-.values {
-  padding: 120px 0;
-}
+/* values */
 
 .visually-hidden {
   position: absolute;
@@ -231,25 +254,28 @@ button {
 }
 
 /* team */
-.team {
-  padding: 120px 0;
-
-  background-color: #f4f4fd;
-  text-transform: capitalize;
-}
-
 .title-h2 {
   margin-bottom: 72px;
 }
 
-.team-list {
-  gap: 24px;
-  width: calc((100% - 72px) / 4);
-  border-radius: 0px 0px 4px 4px;
+.team {
+  background-color: #f4f4fd;
+  text-transform: capitalize;
 }
 
-/* .team-list-item {
-} */
+.team-list {
+  gap: 24px;
+}
+
+.team-list-item {
+  width: calc((100% - 72px) / 4);
+  /* border: 5px solid black; */
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+}
 
 .team-list-item-desc {
   padding: 32px 0;
@@ -264,7 +290,34 @@ button {
   text-align: center;
 }
 
+/* our portfolio */
+.portfolio-list {
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.portfolio-list-item {
+  width: calc((100% - 2 * 24px) / 3);
+}
+
+.portfolio-list-item-desc {
+  text-align: left;
+  padding: 32px 16px;
+
+  border-right: 1px solid var(--CORNFLOWER, #e7e9fc);
+  border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
+  border-left: 1px solid var(--CORNFLOWER, #e7e9fc);
+}
+
 /* Footer */
+.foot .container {
+  flex-direction: column;
+  gap: 17.5px;
+}
+
+.foot-item {
+  max-width: 264px;
+}
 
 footer .logo {
   color: #4d5ae5;
