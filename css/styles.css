@@ -57,6 +57,10 @@ footer {
   background-color: #2e2f42;
 }
 
+a {
+  display: inline-block;
+}
+
 /* common styles */
 .container {
   display: flex;
@@ -340,18 +344,14 @@ footer {
 .foot .container {
   min-height: 100vh;
 }
-.logo {
-  display: inline-block;
-}
 
 footer .logo {
+  display: inline-block;
   margin-bottom: 16px;
-
   color: #4d5ae5;
 }
 
 footer .logo-web {
-  display: inline-block;
   color: #f4f4fd;
 }
 
