@@ -77,8 +77,7 @@ footer {
 
 .values,
 .team,
-.portfolio,
-.foot {
+.portfolio {
   padding: 120px 0;
 }
 
@@ -313,6 +312,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  row-gap: 48px;
 }
 
 .portfolio-list-item {
@@ -328,13 +328,23 @@ footer {
   border-left: 1px solid var(--CORNFLOWER, #e7e9fc);
 }
 
+.portfolio-list-item-desc .title-ht {
+  margin-bottom: 8px;
+}
+
 /* Footer */
+.foot {
+  padding: 100px 0;
+}
+
 .foot .container {
   min-height: 100vh;
-  gap: 17.5px;
 }
 
 footer .logo {
+  display: inline-block;
+  margin-bottom: 16px;
+
   color: #4d5ae5;
 }
 
