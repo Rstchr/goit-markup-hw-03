@@ -223,6 +223,10 @@ footer {
 
 /* values */
 
+.values .container {
+  flex-direction: column;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
