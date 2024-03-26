@@ -340,9 +340,11 @@ footer {
 .foot .container {
   min-height: 100vh;
 }
+.logo-container {
+  display: inline-block;
+}
 
 footer .logo {
-  display: inline-block;
   margin-bottom: 16px;
 
   color: #4d5ae5;
