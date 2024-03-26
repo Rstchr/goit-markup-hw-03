@@ -253,7 +253,7 @@ footer {
 }
 
 .values-list-item {
-  width: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 .values-list-item:last-child {
