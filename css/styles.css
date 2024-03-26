@@ -4,6 +4,10 @@ body {
   background-color: #ffffff;
 }
 
+main {
+  flex-grow: 1;
+}
+
 h1,
 h2,
 h3,
@@ -59,6 +63,14 @@ footer {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.main-title .container,
+.values .container,
+.team .container,
+.portfolio .container,
+.foot .container {
+  flex-direction: column;
 }
 
 .values,
@@ -181,7 +193,6 @@ footer {
 
 /* Main title */
 .main-title .container {
-  flex-direction: column;
   align-items: center;
   gap: 48px;
 }
@@ -222,11 +233,6 @@ footer {
 }
 
 /* values */
-
-.values .container {
-  flex-direction: column;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -242,6 +248,7 @@ footer {
 
 .values-list {
   display: flex;
+  flex-direction: row;
   gap: 24px;
 }
 
@@ -258,6 +265,11 @@ footer {
 }
 
 /* team */
+
+.team-list {
+  display: flex;
+  flex-direction: row;
+}
 .title-h2 {
   margin-bottom: 72px;
 }
@@ -296,6 +308,7 @@ footer {
 
 /* our portfolio */
 .portfolio-list {
+  display: flex;
   flex-wrap: wrap;
   gap: 24px;
 }
@@ -315,12 +328,8 @@ footer {
 
 /* Footer */
 .foot .container {
-  flex-direction: column;
+  min-height: 100vh;
   gap: 17.5px;
-}
-
-.foot-item {
-  max-width: 264px;
 }
 
 footer .logo {
@@ -332,5 +341,6 @@ footer .logo-web {
 }
 
 .f-text {
+  max-width: 264px;
   color: #f4f4fd;
 }
