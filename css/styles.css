@@ -59,7 +59,6 @@ footer {
 
 /* common styles */
 .container {
-  display: flex;
   max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
@@ -113,10 +112,16 @@ footer {
 }
 
 .header-top-line {
+  display: flex;
   height: 72px;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+}
+
+.nav-list,
+.contacts-list {
+  display: flex;
 }
 
 .logo {
@@ -193,10 +198,15 @@ footer {
 }
 
 /* Main title */
+.main-title-item {
+  display: flex;
+}
+
 .main-title .container {
   align-items: center;
   gap: 48px;
 }
+
 .main-title {
   background-color: #2e2f42;
   padding: 188px 0;
@@ -247,6 +257,10 @@ footer {
   overflow: hidden;
 }
 
+.values-container {
+  display: flex;
+}
+
 .values-list {
   display: flex;
   flex-direction: row;
@@ -266,6 +280,10 @@ footer {
 }
 
 /* team */
+
+.team-container {
+  display: flex;
+}
 
 .team-list {
   display: flex;
@@ -308,6 +326,11 @@ footer {
 }
 
 /* our portfolio */
+
+.portfolio-container {
+  display: flex;
+}
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
