@@ -98,6 +98,12 @@ footer {
 }
 
 /* header */
+.nav-class {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
 .header-class {
   border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
   background: var(--WHITE, #fff);
@@ -136,12 +142,6 @@ header .logo {
 
 .logo-span {
   color: #2e2f42;
-}
-
-.nav-class {
-  display: flex;
-  align-items: center;
-  margin-right: auto;
 }
 
 .nav-list {
@@ -337,10 +337,6 @@ header .logo {
 /* Footer */
 .foot {
   padding: 100px 0;
-}
-
-.logo {
-  display: inline-block;
 }
 
 footer .logo {
